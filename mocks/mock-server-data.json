@@ -1,0 +1,78 @@
+{
+  "api": {
+    "titles": [
+      "Отдам гараж",
+      "Апартаменты с видом на море",
+      "Дом в тихом районе",
+      "Квартира рядом с метро",
+      "Лофт в историческом центре"
+    ],
+    "descriptions": [
+      "Просторная студия с современным ремонтом, вся техника, Wi-Fi, рядом парк и кафе.",
+      "Светлые апартаменты с панорамным видом на море, балкон, кондиционер, кухня.",
+      "Тихий район, собственный двор, парковка, до центра 15 минут на машине.",
+      "5 минут пешком до метро, развитая инфраструктура, идеально для командировок.",
+      "Атмосферный лофт с высокими потолками и кирпичными стенами в самом центре."
+    ],
+    "preimages": [
+      "preimg/image-1",
+      "preimg/image-2",
+      "preimg/image-3",
+      "preimg/image-4",
+      "preimg/image-5"
+    ],
+    "images": [
+      "img/image-1",
+      "img/image-2",
+      "img/image-3",
+      "img/image-4",
+      "img/image-5",
+      "img/image-6",
+      "img/image-7"
+    ],
+    "authorEmails": [
+      "olga@example.com",
+      "ivan@example.com",
+      "maria@example.com",
+      "tim@example.com",
+      "anna@example.com"
+    ],
+    "authors": [
+      {
+        "name": "Ольга",
+        "email": "olga@example.com",
+        "photoUrl": "women/1.jpg",
+        "password": "olga12345",
+        "type": "common"
+      },
+      {
+        "name": "Иван",
+        "email": "ivan@example.com",
+        "photoUrl": "men/2.jpg",
+        "password": "ivan12345",
+        "type": "pro"
+      },
+      {
+        "name": "Мария",
+        "email": "maria@example.com",
+        "photoUrl": "women/3.jpg",
+        "password": "maria12345",
+        "type": "common"
+      },
+      {
+        "name": "Тимофей",
+        "email": "tim@example.com",
+        "photoUrl": "men/4.jpg",
+        "password": "tim12345",
+        "type": "pro"
+      },
+      {
+        "name": "Анна",
+        "email": "anna@example.com",
+        "photoUrl": "women/5.jpg",
+        "password": "anna12345",
+        "type": "common"
+      }
+    ]
+  }
+}

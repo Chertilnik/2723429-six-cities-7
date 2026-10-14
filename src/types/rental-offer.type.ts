@@ -1,8 +1,8 @@
-import {City} from './city.type';
-import {HouseType} from './house-type.type';
-import {Convenience} from './conveniences.type';
-import {User} from './user.type';
-import {Location} from './location.type';
+import {City} from './city.type.js';
+import {HouseType} from './house-type.type.js';
+import {Convenience} from './conveniences.type.js';
+import {User} from './user.type.js';
+import {Location} from './location.type.js';
 
 export type RentalOffer = {
   name: string,

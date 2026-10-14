@@ -1,4 +1,4 @@
-import {ICommand} from './command.interface';
+import {ICommand} from './command.interface.js';
 import {readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 

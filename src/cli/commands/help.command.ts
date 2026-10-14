@@ -1,4 +1,4 @@
-import {ICommand} from './command.interface';
+import {ICommand} from './command.interface.js';
 
 export class HelpCommand implements ICommand {
   public getName(): string {
