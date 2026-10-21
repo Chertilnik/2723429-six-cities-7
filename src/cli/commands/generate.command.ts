@@ -1,8 +1,8 @@
 import {ICommand} from './command.interface.js';
-import {MockServerData} from '../../types/index.js';
+import {MockServerData} from '../shared/types/index.js';
 import got from 'got';
-import {TSVOfferGenerator} from '../libs/offer-generator/index.js';
-import {TSVFileWriter} from '../libs/file-writer/index.js';
+import {TSVOfferGenerator} from '../shared/libs/offer-generator/index.js';
+import {TSVFileWriter} from '../shared/libs/file-writer/index.js';
 import {getErrorMessage} from '../shared/helpers/index.js';
 
 

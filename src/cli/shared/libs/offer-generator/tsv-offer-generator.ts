@@ -1,6 +1,6 @@
 import {OfferGenerator} from './offer-generator.interface.js';
-import {Cities, CityLocation, Conveniences, HouseTypes, MockServerData} from '../../../types/index.js';
-import {generateRandomValue, getRandomItem, getRandomItems} from '../../shared/helpers/index.js';
+import {Cities, CityLocation, Conveniences, HouseTypes, MockServerData} from '../../types/index.js';
+import {generateRandomValue, getRandomItem, getRandomItems} from '../../helpers/index.js';
 import dayjs from 'dayjs';
 
 

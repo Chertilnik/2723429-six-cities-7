@@ -1,4 +1,4 @@
-import {isCity, isConvenience, isHouseType, isUserType, RentalOffer} from '../../../types/index.js';
+import {isCity, isConvenience, isHouseType, isUserType, RentalOffer} from '../types/index.js';
 
 export function createOffer(offerData: string): RentalOffer {
   const [
