@@ -1,6 +1,6 @@
 import {ILogger} from './logger.interface.js';
 import {Logger as PinoInstance, pino, transport} from 'pino';
-import {getCurrentModuleDirectoryPath} from './file-system.js';
+import {getCurrentModuleDirectoryPath} from '../helpers/index.js';
 import {resolve} from 'node:path';
 import { injectable } from 'inversify';
 
