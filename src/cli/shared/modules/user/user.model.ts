@@ -10,10 +10,10 @@ export interface UserDocument extends User, Document {
 }
 
 const userSchema = new Schema<UserDocument>({
-  name: {type: String, required: true, minlength: [2, 'Min length for firstname is 2']},
+  name: {type: String, required: true, minlength: [1, 'Min length for firstname is 1'], maxlength: 15},
   email: {type: String, required: true, unique: true, match: [/^([\w-\\.]+@([\w-]+\.)+[\w-]{2,4})?$/, 'Email is incorrect'],},
   photoUrl: String,
-  password: {type: String, required: true, minlength: [8, 'Min length for password is 8']},
+  password: {type: String, required: true, minlength: [6, 'Min length for password is 6'], maxLength: 12  },
   type: {
     type: String,
     enum: UserTypes,
