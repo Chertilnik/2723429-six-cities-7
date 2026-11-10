@@ -4,7 +4,8 @@ import {Component} from './cli/shared/types/index.js';
 import {createRestApplicationContainer} from './cli/rest/rest.container.js';
 import {Container} from 'inversify';
 import {createUserContainer} from './cli/shared/modules/user/index.js';
-import {createOfferContainer} from './cli/shared/modules/offer/offer.container.js';
+import {createOfferContainer} from './cli/shared/modules/offer/index.js';
+import {createCommentContainer} from './cli/shared/modules/comment/index.js';
 
 
 async function bootstrap() {
@@ -12,7 +13,8 @@ async function bootstrap() {
   container.load(
     createRestApplicationContainer(),
     createUserContainer(),
-    createOfferContainer()
+    createOfferContainer(),
+    createCommentContainer()
   );
 
   const application = container.get<RestApplication>(Component.RestApplication);

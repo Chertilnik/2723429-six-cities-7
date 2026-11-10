@@ -4,6 +4,7 @@ import {inject, injectable} from 'inversify';
 import {Component} from '../shared/types/index.js';
 import {IDatabaseClient} from '../shared/libs/database-client/index.js';
 import {getMongoURI} from '../shared/helpers/index.js';
+// import {ICommentService} from '../shared/modules/comment/index.js';
 
 
 @injectable()
@@ -12,6 +13,7 @@ export class RestApplication {
     @inject(Component.Logger) private readonly logger: ILogger,
     @inject(Component.Config) private readonly config: IConfig<RestSchema>,
     @inject(Component.DatabaseClient) private readonly databaseClient: IDatabaseClient,
+    // @inject(Component.CommentService) private readonly commentService: ICommentService,
   ) {}
 
   private async _initDb() {
@@ -33,5 +35,8 @@ export class RestApplication {
     this.logger.info('Init database...');
     await this._initDb();
     this.logger.info('Init database completed');
+
+    // const result = await this.commentService.findByOfferId('6ade1daaf7ba7bbc52643ff6');
+    // console.log(result);
   }
 }
